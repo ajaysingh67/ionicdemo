@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-row>
+    <ion-col   size-sm="6" size-xs="12" size-md="4" class="ion-text-center ion-text-sm-center ion-text-md-left">
+      <ion-text  >
+        Home
+      </ion-text>
+    </ion-col>
+    <ion-col size-sm="6" size-xs="12" size-md="4">
+      <!-- <ion-item>
+        <ion-label>Your Label</ion-label>
+        <ion-input type="text" ></ion-input>
+        <button ion-button large  item-end></button>
+      </ion-item> -->
+      <ion-list lines="none">
+      <ion-item >
+        <ion-select item-start [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select">
+            <ion-select-option value="brown">All</ion-select-option>
+            <ion-select-option value="blonde">Blonde</ion-select-option>
+            <ion-select-option value="black">Black</ion-select-option>
+            <ion-select-option value="red">Red</ion-select-option>
+          </ion-select>
+        <ion-input  type="text" placeholder="Search"></ion-input>
+        <button ion-button large clear item-end>
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-item>
+    </ion-list>
+    </ion-col>
+    <ion-col size-sm="12" size-xs="12" size-md="4" class="ion-text-center ion-text-sm-right">
+        <ion-chip (click)="openpopup($event)">
+            <ion-avatar>
+              <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+            </ion-avatar>
+            <ion-label>Ajay Singh</ion-label>
+          </ion-chip>
+      
+     </ion-col>
+  </ion-row>
+    
+    
+    
+
+ 
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            
+          </ion-item>
+      
+      </ion-list>
+    <!-- <ion-item>
+        <ion-label>Toppings</ion-label>
+        <ion-select>
+          <ion-option>Bacon</ion-option>
+          <ion-option>Black Olives</ion-option>
+          <ion-option>Extra Cheese</ion-option>
+          <ion-option>Mushrooms</ion-option>
+          <ion-option>Pepperoni</ion-option>
+          <ion-option>Sausage</ion-option>
+        </ion-select>
+      </ion-item> -->
+    
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+   
+</ion-content>
